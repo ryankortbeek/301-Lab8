@@ -23,6 +23,18 @@ public class CityList {
     }
 
     /**
+     * This gets the city located at index cityInd
+     * @param cityInd
+     *      This is the index of the city to get
+     * @return
+     *      Returns the City object at that index
+     */
+    public City getCity(int cityInd) {
+        return cities.get(cityInd);
+    }
+
+
+    /**
      * This returns a sorted list of cities
      * @return
      *      Return the sorted list
