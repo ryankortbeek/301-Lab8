@@ -45,9 +45,14 @@ class CityListTest {
     void testHasCity() {
         CityList cityList = mockCityList();
 
-        City city = new City("Yellowknife", "Northwest Territories");
+        assertTrue(cityList.hasCity(mockCity()));
+    }
 
-        assertTrue(cityList.hasCity(city));
+    @Test
+    void testGetCity() {
+        CityList cityList = mockCityList();
+
+        assertTrue(mockCity().equals(cityList.getCity(0)));
     }
 
     @Test
